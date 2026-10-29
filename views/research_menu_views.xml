@@ -1,0 +1,4 @@
+<odoo>
+  <menuitem id="menu_research_analytics" name="Research Analytics" parent="fedex_repository.menu_reports" action="action_research_analytics" sequence="1"/>
+  <menuitem id="menu_collaborator_analytics" name="Collaborator Engagement" parent="fedex_repository.menu_reports" action="action_member_role_analytics" sequence="2"/>
+</odoo>

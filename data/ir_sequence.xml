@@ -1,0 +1,6 @@
+<odoo><data noupdate="1">
+<record id="seq_student" model="ir.sequence"><field name="name">FedEx Student</field><field name="code">fedex.student</field><field name="prefix">STU/%(year)s/</field><field name="padding">4</field></record>
+<record id="seq_faculty" model="ir.sequence"><field name="name">FedEx Faculty</field><field name="code">fedex.faculty</field><field name="prefix">FAC/%(year)s/</field><field name="padding">4</field></record>
+<record id="seq_staff" model="ir.sequence"><field name="name">FedEx Staff</field><field name="code">fedex.staff</field><field name="prefix">STF/%(year)s/</field><field name="padding">4</field></record>
+<record id="seq_project" model="ir.sequence"><field name="name">FedEx Project</field><field name="code">fedex.project</field><field name="prefix">FDR/%(year)s/</field><field name="padding">4</field></record>
+</data></odoo>

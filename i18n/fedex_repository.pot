@@ -1,0 +1,142 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fedex_repository
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-29 10:28+0000\n"
+"PO-Revision-Date: 2026-10-29 10:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fedex_repository
+#: model:ir.module.category,name:fedex_repository.module_category_fedex_repository
+msgid "FedEx Repository"
+msgstr ""
+
+#. module: fedex_repository
+#: model:res.groups,name:fedex_repository.group_administrator
+msgid "Administrator"
+msgstr ""
+
+#. module: fedex_repository
+#: model:res.groups,name:fedex_repository.group_repository_manager
+msgid "Repository Manager"
+msgstr ""
+
+#. module: fedex_repository
+#: model:res.groups,name:fedex_repository.group_coordinator
+msgid "Coordinator"
+msgstr ""
+
+#. module: fedex_repository
+#: model:res.groups,name:fedex_repository.group_faculty
+msgid "Faculty"
+msgstr ""
+
+#. module: fedex_repository
+#: model:res.groups,name:fedex_repository.group_student
+msgid "Student"
+msgstr ""
+
+#. module: fedex_repository
+#: model:res.groups,name:fedex_repository.group_management
+msgid "Management"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.ui.menu,name:fedex_repository.menu_fedex_root
+msgid "FedEx Repository"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.ui.menu,name:fedex_repository.menu_projects
+msgid "Projects"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.ui.menu,name:fedex_repository.menu_people
+msgid "People"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.ui.menu,name:fedex_repository.menu_documents
+msgid "Documents"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.ui.menu,name:fedex_repository.menu_import
+msgid "Import"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.ui.menu,name:fedex_repository.menu_reports
+msgid "Reports"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.ui.menu,name:fedex_repository.menu_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_project
+msgid "FedEx Project"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_centre
+msgid "FedEx Centre"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_student_profile
+msgid "FedEx Student Profile"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_faculty_profile
+msgid "FedEx Faculty Profile"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_staff_profile
+msgid "FedEx Staff Profile"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_document
+msgid "FedEx Document"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_document_requirement
+msgid "FedEx Document Requirement"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_import_wizard
+msgid "FedEx Import Wizard"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_document_replace_wizard
+msgid "FedEx Document Replace Wizard"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_add_member_wizard
+msgid "FedEx Add Member Wizard"
+msgstr ""
+
+#. module: fedex_repository
+#: model:ir.model,name:fedex_repository.model_fedex_alert_log
+msgid "FedEx Alert Log"
+msgstr ""

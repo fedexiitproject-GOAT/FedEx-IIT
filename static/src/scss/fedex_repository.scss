@@ -1,0 +1,33 @@
+.o_fedex_dashboard {
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: clamp(1rem, 2.5vw, 2rem) !important;
+  color: var(--fedex-ink, #241b2f);
+  background: transparent;
+}
+.o_fedex_dashboard .fedex-kpi {
+  width: 100%; min-height: 142px; padding: 1.25rem !important; text-align: left;
+  color: inherit; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease;
+}
+.o_fedex_dashboard .fedex-kpi:focus-visible { outline: 3px solid rgba(255,98,0,.55); outline-offset: 3px; }
+.o_fedex_dashboard .fedex-kpi .fedex-kpi-icon {
+  display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px;
+  margin-bottom: 12px; border-radius: 12px; color: var(--fedex-purple, #4d148c);
+  background: var(--fedex-purple-soft, #f2ebfa);
+}
+.o_fedex_dashboard .fedex-kpi-orange .fedex-kpi-icon { color: var(--fedex-orange, #ff6200); background: var(--fedex-orange-soft, #fff0e7); }
+.o_fedex_dashboard .fedex-chart-card { padding: 1.25rem; min-height: 100%; }
+.o_fedex_dashboard .fedex-chart-heading { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:1.1rem; }
+.o_fedex_dashboard .fedex-chart-subtitle { color:var(--fedex-muted,#746b7d); font-size:.8rem; margin-top:4px; }
+.o_fedex_dashboard .fedex-activity-dot { display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--fedex-orange,#ff6200); box-shadow:0 0 0 4px rgba(255,98,0,.1); margin:0 10px 0 2px; flex:0 0 auto; }
+.o_fedex_dashboard .fedex-status-text { display:inline-block; padding:4px 9px; border-radius:999px; font-size:.74rem; font-weight:650; background:var(--fedex-purple-soft,#f2ebfa); color:var(--fedex-purple,#4d148c); }
+.o_fedex_dashboard .fedex-status-text.is-completed { background:#e7f7ee; color:#167346; }
+.o_fedex_dashboard .fedex-status-text.is-on-hold { background:#fff0e7; color:#a83c00; }
+.o_fedex_dashboard .fedex-dashboard-footer { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; color:var(--fedex-muted,#746b7d); font-size:.8rem; }
+@media (max-width: 575.98px) {
+  .o_fedex_dashboard .fedex-kpi { min-height:125px; padding:1rem !important; }
+  .o_fedex_dashboard .fedex-chart-card { padding:1rem; }
+  .o_fedex_dashboard .fedex-activity-row { align-items:flex-start !important; flex-direction:column; gap:8px; }
+}

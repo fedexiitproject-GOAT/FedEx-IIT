@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [ "18.0", "main", "master" ]
+  pull_request:
+    branches: [ "18.0", "main", "master" ]
+
+jobs:
+  lint-and-validate:
+    name: Code Quality & Syntax Validation
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+
+      - name: Install Linting & Parsing Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 flake8-bugbear openpyxl
+
+      - name: Python Bytecode Compilation Check
+        run: |
+          python -m compileall -q .
+
+      - name: Flake8 Linting
+        run: |
+          # Stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # Exit-zero treats all errors as warnings
+          flake8 . --count --exit-zero --max-complexity=15 --max-line-length=127 --statistics
+
+      - name: XML Validation Check
+        run: |
+          python -c '
+          import os, sys, xml.etree.ElementTree as ET
+          has_errors = False
+          for root, _, files in os.walk("."):
+              for f in files:
+                  if f.endswith(".xml"):
+                      p = os.path.join(root, f)
+                      try:
+                          ET.parse(p)
+                      except Exception as e:
+                          print(f"::error file={p}::XML Parse Error: {e}")
+                          has_errors = True
+          if has_errors:
+              sys.exit(1)
+          print("All XML files parsed cleanly.")
+          '
+
+      - name: Manifest Integrity Check
+        run: |
+          python -c '
+          import ast, os, sys
+          manifest_path = "__manifest__.py"
+          if not os.path.isfile(manifest_path):
+              print("::error::__manifest__.py not found at repository root")
+              sys.exit(1)
+          with open(manifest_path, "r", encoding="utf-8") as f:
+              data = ast.literal_eval(f.read())
+          assert data.get("name"), "Manifest must have a name"
+          assert data.get("version"), "Manifest must have a version"
+          assert data.get("license"), "Manifest must have a license"
+          print("Manifest validated successfully:", data.get("name"), data.get("version"))
+          '

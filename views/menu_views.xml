@@ -1,0 +1,54 @@
+<odoo><data>
+<record id="action_fedex_dashboard" model="ir.actions.client"><field name="name">FedEx Repository Dashboard</field><field name="tag">fedex_repository_dashboard</field></record>
+<record id="action_fedex_global_search" model="ir.actions.client"><field name="name">Global Search</field><field name="tag">fedex_repository_global_search</field></record>
+<record id="action_projects" model="ir.actions.act_window"><field name="name">Projects</field><field name="res_model">fedex.project</field><field name="view_mode">kanban,list,form</field><field name="search_view_id" ref="view_project_search"/></record>
+<record id="action_students" model="ir.actions.act_window"><field name="name">Students</field><field name="res_model">fedex.student</field><field name="view_mode">list,kanban,form</field><field name="search_view_id" ref="view_student_search"/></record>
+<record id="action_faculty" model="ir.actions.act_window"><field name="name">Faculty</field><field name="res_model">fedex.faculty</field><field name="view_mode">list,kanban,form</field><field name="search_view_id" ref="view_faculty_search"/></record>
+<record id="action_staff" model="ir.actions.act_window"><field name="name">Staff</field><field name="res_model">fedex.staff</field><field name="view_mode">list,kanban,form</field><field name="search_view_id" ref="view_staff_search"/></record>
+<record id="action_documents" model="ir.actions.act_window"><field name="name">Documents</field><field name="res_model">fedex.document</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_document_search"/></record>
+<record id="action_dashboard_overdue_milestones" model="ir.actions.act_window"><field name="name">Overdue Milestones</field><field name="res_model">fedex.milestone</field><field name="view_mode">list,form</field><field name="domain">[('state','=','overdue')]</field><field name="search_view_id" ref="view_milestone_search"/></record>
+<record id="action_dashboard_active_interns" model="ir.actions.act_window"><field name="name">Active Interns</field><field name="res_model">fedex.project.member</field><field name="view_mode">list,form</field><field name="domain">[('state','=','active'),('is_internship','=',True)]</field><field name="search_view_id" ref="view_member_search"/></record>
+<record id="action_import_wizard" model="ir.actions.act_window"><field name="name">Import Data</field><field name="res_model">fedex.import.wizard</field><field name="view_mode">form</field><field name="target">new</field></record>
+
+<record id="action_centres" model="ir.actions.act_window"><field name="name">Centres</field><field name="res_model">fedex.centre</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_centre_search"/></record>
+<record id="action_institutions" model="ir.actions.act_window"><field name="name">Institutions</field><field name="res_model">fedex.institution</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_institution_search"/></record>
+<record id="action_departments" model="ir.actions.act_window"><field name="name">Departments</field><field name="res_model">fedex.department</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_department_search"/></record>
+<record id="action_degrees" model="ir.actions.act_window"><field name="name">Degrees</field><field name="res_model">fedex.degree</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_degree_search"/></record>
+<record id="action_skills" model="ir.actions.act_window"><field name="name">Skills</field><field name="res_model">fedex.skill</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_skill_search"/></record>
+<record id="action_project_types" model="ir.actions.act_window"><field name="name">Project Types</field><field name="res_model">fedex.project.type</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_type_search"/></record>
+<record id="action_categories" model="ir.actions.act_window"><field name="name">Project Categories</field><field name="res_model">fedex.project.category</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_category_search"/></record>
+<record id="action_sponsors" model="ir.actions.act_window"><field name="name">Sponsors</field><field name="res_model">fedex.sponsor</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_sponsor_search"/></record>
+<record id="action_roles" model="ir.actions.act_window"><field name="name">Project Roles</field><field name="res_model">fedex.project.role</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_role_search"/></record>
+<record id="action_doc_types" model="ir.actions.act_window"><field name="name">Document Types</field><field name="res_model">fedex.document.type</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_doc_type_search"/></record>
+
+<menuitem id="menu_fedex_root" name="FedEx Repository" sequence="10"/>
+<menuitem id="menu_dashboard" parent="menu_fedex_root" name="Dashboard" action="action_fedex_dashboard" sequence="1"/>
+<menuitem id="menu_global_search" parent="menu_fedex_root" name="Global Search" action="action_fedex_global_search" sequence="2"/>
+<menuitem id="menu_projects" parent="menu_fedex_root" name="Projects" action="action_projects" sequence="10"/>
+<menuitem id="menu_people" parent="menu_fedex_root" name="People" sequence="20"/>
+<menuitem id="menu_students" parent="menu_people" name="Students" action="action_students"/>
+<menuitem id="menu_faculty" parent="menu_people" name="Faculty" action="action_faculty"/>
+<menuitem id="menu_staff" parent="menu_people" name="Staff" action="action_staff"/>
+<menuitem id="menu_documents" parent="menu_fedex_root" name="Documents" action="action_documents" sequence="30"/>
+<menuitem id="menu_reports" parent="menu_fedex_root" name="Reports" sequence="40"/>
+<menuitem id="menu_active_projects" parent="menu_reports" name="Active Projects" action="action_active_projects"/>
+<menuitem id="menu_category_projects" parent="menu_reports" name="Projects by Category" action="action_category_projects"/>
+<menuitem id="menu_sponsor_projects" parent="menu_reports" name="Projects by Sponsor" action="action_sponsor_projects"/>
+<menuitem id="menu_personnel" parent="menu_reports" name="Project Personnel" action="action_project_personnel_report"/>
+<menuitem id="menu_nearing" parent="menu_reports" name="Projects Nearing Completion" action="action_nearing_projects"/>
+<menuitem id="menu_pending" parent="menu_reports" name="Pending Documents" action="action_pending_documents"/>
+<menuitem id="menu_internship" parent="menu_reports" name="Internship Information" action="action_internship"/>
+<menuitem id="menu_import" parent="menu_fedex_root" name="Import" action="action_import_wizard" groups="fedex_repository.group_repository_manager,fedex_repository.group_administrator" sequence="50"/>
+<menuitem id="menu_config" parent="menu_fedex_root" name="Configuration" groups="fedex_repository.group_repository_manager,fedex_repository.group_administrator" sequence="90"/>
+<record id="action_fedex_settings" model="ir.actions.act_window"><field name="name">Repository Settings</field><field name="res_model">res.config.settings</field><field name="view_mode">form</field><field name="target">inline</field></record>
+<menuitem id="menu_settings" parent="menu_config" name="Repository Settings" action="action_fedex_settings"/><menuitem id="menu_centres" parent="menu_config" name="Centres" action="action_centres"/>
+<menuitem id="menu_institutions" parent="menu_config" name="Institutions" action="action_institutions"/>
+<menuitem id="menu_departments" parent="menu_config" name="Departments" action="action_departments"/>
+<menuitem id="menu_degrees" parent="menu_config" name="Degrees" action="action_degrees"/>
+<menuitem id="menu_skills" parent="menu_config" name="Skills" action="action_skills"/>
+<menuitem id="menu_types" parent="menu_config" name="Project Types" action="action_project_types"/>
+<menuitem id="menu_categories" parent="menu_config" name="Project Categories" action="action_categories"/>
+<menuitem id="menu_sponsors" parent="menu_config" name="Sponsors" action="action_sponsors"/>
+<menuitem id="menu_roles" parent="menu_config" name="Project Roles" action="action_roles"/>
+<menuitem id="menu_doc_types" parent="menu_config" name="Document Types" action="action_doc_types"/>
+</data></odoo>

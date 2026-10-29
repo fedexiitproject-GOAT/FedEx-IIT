@@ -1,0 +1,40 @@
+<odoo>
+  <record id="view_research_analytics_search" model="ir.ui.view">
+    <field name="name">fedex.project.research.analytics.search</field><field name="model">fedex.project</field>
+    <field name="arch" type="xml"><search>
+      <field name="name"/><field name="vertical"/><field name="state"/><field name="type_id"/><field name="category_ids"/>
+      <filter string="Active research" name="active_research" domain="[('active','=',True)]"/>
+      <group expand="0" string="Group By">
+        <filter string="Vertical" name="group_vertical" context="{'group_by':'vertical'}"/>
+        <filter string="Progress Status" name="group_state" context="{'group_by':'state'}"/>
+        <filter string="Project Type" name="group_type" context="{'group_by':'type_id'}"/>
+        <filter string="Category" name="group_category" context="{'group_by':'category_ids'}"/>
+      </group>
+    </search></field>
+  </record>
+  <record id="action_research_analytics" model="ir.actions.act_window">
+    <field name="name">Research Analytics</field><field name="res_model">fedex.project</field>
+    <field name="view_mode">graph,pivot,list,kanban</field>
+    <field name="search_view_id" ref="view_research_analytics_search"/>
+    <field name="context">{'search_default_group_vertical': 1}</field>
+  </record>
+  <record id="view_research_analytics_graph" model="ir.ui.view">
+    <field name="name">fedex.project.research.analytics.graph</field><field name="model">fedex.project</field>
+    <field name="arch" type="xml"><graph string="Projects by vertical and status" type="bar"><field name="vertical" type="row"/><field name="state" type="col"/></graph></field>
+  </record>
+  <record id="view_research_analytics_pivot" model="ir.ui.view">
+    <field name="name">fedex.project.research.analytics.pivot</field><field name="model">fedex.project</field>
+    <field name="arch" type="xml"><pivot string="Research project analytics"><field name="vertical" type="row"/><field name="state" type="col"/></pivot></field>
+  </record>
+  <record id="action_member_role_analytics" model="ir.actions.act_window">
+    <field name="name">Collaborator Engagement</field><field name="res_model">fedex.project.member</field><field name="view_mode">graph,pivot,list</field>
+  </record>
+  <record id="view_member_role_analytics_graph" model="ir.ui.view">
+    <field name="name">fedex.project.member.role.analytics.graph</field><field name="model">fedex.project.member</field>
+    <field name="arch" type="xml"><graph string="Collaborators by association" type="bar"><field name="association_type" type="row"/></graph></field>
+  </record>
+  <record id="view_member_role_analytics_pivot" model="ir.ui.view">
+    <field name="name">fedex.project.member.role.analytics.pivot</field><field name="model">fedex.project.member</field>
+    <field name="arch" type="xml"><pivot string="Collaborator engagement"><field name="association_type" type="row"/><field name="project_id" type="row"/></pivot></field>
+  </record>
+</odoo>

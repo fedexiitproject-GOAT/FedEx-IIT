@@ -1,0 +1,15 @@
+<odoo>
+  <!-- Keep the three required project types canonical and avoid duplicate legacy choices. -->
+  <record id="type_full" model="fedex.project.type">
+    <field name="name">Full Time Projects</field>
+    <field name="active" eval="True"/>
+  </record>
+  <record id="type_full_time_projects" model="fedex.project.type">
+    <field name="name">Legacy duplicate — Full Time Projects</field>
+    <field name="active" eval="False"/>
+  </record>
+  <record id="type_fedex_scholarship_projects" model="fedex.project.type">
+    <field name="name">FedEx Scholarship Projects</field>
+    <field name="active" eval="True"/>
+  </record>
+</odoo>

@@ -1,0 +1,128 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_institution_admin,Institution Admin,model_fedex_institution,fedex_repository.group_administrator,1,1,1,1
+access_institution_manager,Institution Manager,model_fedex_institution,fedex_repository.group_repository_manager,1,1,1,1
+access_institution_coordinator,Institution Coordinator,model_fedex_institution,fedex_repository.group_coordinator,1,0,0,0
+access_institution_faculty,Institution Faculty,model_fedex_institution,fedex_repository.group_faculty,1,0,0,0
+access_institution_student,Institution Student,model_fedex_institution,fedex_repository.group_student,1,0,0,0
+access_institution_management,Institution Management,model_fedex_institution,fedex_repository.group_management,1,0,0,0
+access_department_admin,Department Admin,model_fedex_department,fedex_repository.group_administrator,1,1,1,1
+access_department_manager,Department Manager,model_fedex_department,fedex_repository.group_repository_manager,1,1,1,1
+access_department_coordinator,Department Coordinator,model_fedex_department,fedex_repository.group_coordinator,1,0,0,0
+access_department_faculty,Department Faculty,model_fedex_department,fedex_repository.group_faculty,1,0,0,0
+access_department_student,Department Student,model_fedex_department,fedex_repository.group_student,1,0,0,0
+access_department_management,Department Management,model_fedex_department,fedex_repository.group_management,1,0,0,0
+access_degree_admin,Degree Admin,model_fedex_degree,fedex_repository.group_administrator,1,1,1,1
+access_degree_manager,Degree Manager,model_fedex_degree,fedex_repository.group_repository_manager,1,1,1,1
+access_degree_coordinator,Degree Coordinator,model_fedex_degree,fedex_repository.group_coordinator,1,0,0,0
+access_degree_faculty,Degree Faculty,model_fedex_degree,fedex_repository.group_faculty,1,0,0,0
+access_degree_student,Degree Student,model_fedex_degree,fedex_repository.group_student,1,0,0,0
+access_degree_management,Degree Management,model_fedex_degree,fedex_repository.group_management,1,0,0,0
+access_skill_admin,Skill Admin,model_fedex_skill,fedex_repository.group_administrator,1,1,1,1
+access_skill_manager,Skill Manager,model_fedex_skill,fedex_repository.group_repository_manager,1,1,1,1
+access_skill_coordinator,Skill Coordinator,model_fedex_skill,fedex_repository.group_coordinator,1,0,0,0
+access_skill_faculty,Skill Faculty,model_fedex_skill,fedex_repository.group_faculty,1,0,0,0
+access_skill_student,Skill Student,model_fedex_skill,fedex_repository.group_student,1,0,0,0
+access_skill_management,Skill Management,model_fedex_skill,fedex_repository.group_management,1,0,0,0
+access_centre_admin,Centre Admin,model_fedex_centre,fedex_repository.group_administrator,1,1,1,1
+access_centre_manager,Centre Manager,model_fedex_centre,fedex_repository.group_repository_manager,1,1,1,1
+access_centre_coordinator,Centre Coordinator,model_fedex_centre,fedex_repository.group_coordinator,1,0,0,0
+access_centre_faculty,Centre Faculty,model_fedex_centre,fedex_repository.group_faculty,1,0,0,0
+access_centre_student,Centre Student,model_fedex_centre,fedex_repository.group_student,1,0,0,0
+access_centre_management,Centre Management,model_fedex_centre,fedex_repository.group_management,1,0,0,0
+access_project_type_admin,Project Type Admin,model_fedex_project_type,fedex_repository.group_administrator,1,1,1,1
+access_project_type_manager,Project Type Manager,model_fedex_project_type,fedex_repository.group_repository_manager,1,1,1,1
+access_project_type_coordinator,Project Type Coordinator,model_fedex_project_type,fedex_repository.group_coordinator,1,0,0,0
+access_project_type_faculty,Project Type Faculty,model_fedex_project_type,fedex_repository.group_faculty,1,0,0,0
+access_project_type_student,Project Type Student,model_fedex_project_type,fedex_repository.group_student,1,0,0,0
+access_project_type_management,Project Type Management,model_fedex_project_type,fedex_repository.group_management,1,0,0,0
+access_category_admin,Category Admin,model_fedex_project_category,fedex_repository.group_administrator,1,1,1,1
+access_category_manager,Category Manager,model_fedex_project_category,fedex_repository.group_repository_manager,1,1,1,1
+access_category_coordinator,Category Coordinator,model_fedex_project_category,fedex_repository.group_coordinator,1,0,0,0
+access_category_faculty,Category Faculty,model_fedex_project_category,fedex_repository.group_faculty,1,0,0,0
+access_category_student,Category Student,model_fedex_project_category,fedex_repository.group_student,1,0,0,0
+access_category_management,Category Management,model_fedex_project_category,fedex_repository.group_management,1,0,0,0
+access_sponsor_admin,Sponsor Admin,model_fedex_sponsor,fedex_repository.group_administrator,1,1,1,1
+access_sponsor_manager,Sponsor Manager,model_fedex_sponsor,fedex_repository.group_repository_manager,1,1,1,1
+access_sponsor_coordinator,Sponsor Coordinator,model_fedex_sponsor,fedex_repository.group_coordinator,1,0,0,0
+access_sponsor_faculty,Sponsor Faculty,model_fedex_sponsor,fedex_repository.group_faculty,1,0,0,0
+access_sponsor_student,Sponsor Student,model_fedex_sponsor,fedex_repository.group_student,1,0,0,0
+access_sponsor_management,Sponsor Management,model_fedex_sponsor,fedex_repository.group_management,1,0,0,0
+access_role_admin,Role Admin,model_fedex_project_role,fedex_repository.group_administrator,1,1,1,1
+access_role_manager,Role Manager,model_fedex_project_role,fedex_repository.group_repository_manager,1,1,1,1
+access_role_coordinator,Role Coordinator,model_fedex_project_role,fedex_repository.group_coordinator,1,0,0,0
+access_role_faculty,Role Faculty,model_fedex_project_role,fedex_repository.group_faculty,1,0,0,0
+access_role_student,Role Student,model_fedex_project_role,fedex_repository.group_student,1,0,0,0
+access_role_management,Role Management,model_fedex_project_role,fedex_repository.group_management,1,0,0,0
+access_doc_type_admin,Document Type Admin,model_fedex_document_type,fedex_repository.group_administrator,1,1,1,1
+access_doc_type_manager,Document Type Manager,model_fedex_document_type,fedex_repository.group_repository_manager,1,1,1,1
+access_doc_type_coordinator,Document Type Coordinator,model_fedex_document_type,fedex_repository.group_coordinator,1,0,0,0
+access_doc_type_faculty,Document Type Faculty,model_fedex_document_type,fedex_repository.group_faculty,1,0,0,0
+access_doc_type_student,Document Type Student,model_fedex_document_type,fedex_repository.group_student,1,0,0,0
+access_doc_type_management,Document Type Management,model_fedex_document_type,fedex_repository.group_management,1,0,0,0
+access_student_admin,Student Admin,model_fedex_student,fedex_repository.group_administrator,1,1,1,1
+access_student_manager,Student Manager,model_fedex_student,fedex_repository.group_repository_manager,1,1,1,1
+access_student_coordinator,Student Coordinator,model_fedex_student,fedex_repository.group_coordinator,1,1,1,0
+access_student_faculty,Student Faculty,model_fedex_student,fedex_repository.group_faculty,1,0,0,0
+access_student_student,Student Self,model_fedex_student,fedex_repository.group_student,1,0,0,0
+access_student_management,Student Management,model_fedex_student,fedex_repository.group_management,1,0,0,0
+access_faculty_admin,Faculty Admin,model_fedex_faculty,fedex_repository.group_administrator,1,1,1,1
+access_faculty_manager,Faculty Manager,model_fedex_faculty,fedex_repository.group_repository_manager,1,1,1,1
+access_faculty_coordinator,Faculty Coordinator,model_fedex_faculty,fedex_repository.group_coordinator,1,1,1,0
+access_faculty_faculty,Faculty Faculty,model_fedex_faculty,fedex_repository.group_faculty,1,0,0,0
+access_faculty_student,Faculty Student,model_fedex_faculty,fedex_repository.group_student,1,0,0,0
+access_faculty_management,Faculty Management,model_fedex_faculty,fedex_repository.group_management,1,0,0,0
+access_staff_admin,Staff Admin,model_fedex_staff,fedex_repository.group_administrator,1,1,1,1
+access_staff_manager,Staff Manager,model_fedex_staff,fedex_repository.group_repository_manager,1,1,1,1
+access_staff_coordinator,Staff Coordinator,model_fedex_staff,fedex_repository.group_coordinator,1,1,1,0
+access_staff_faculty,Staff Faculty,model_fedex_staff,fedex_repository.group_faculty,1,0,0,0
+access_staff_student,Staff Student,model_fedex_staff,fedex_repository.group_student,1,0,0,0
+access_staff_management,Staff Management,model_fedex_staff,fedex_repository.group_management,1,0,0,0
+access_project_admin,Project Admin,model_fedex_project,fedex_repository.group_administrator,1,1,1,1
+access_project_manager,Project Manager,model_fedex_project,fedex_repository.group_repository_manager,1,1,1,1
+access_project_coordinator,Project Coordinator,model_fedex_project,fedex_repository.group_coordinator,1,1,1,1
+access_project_faculty,Project Faculty,model_fedex_project,fedex_repository.group_faculty,1,1,0,0
+access_project_student,Project Student,model_fedex_project,fedex_repository.group_student,1,0,0,0
+access_project_management,Project Management,model_fedex_project,fedex_repository.group_management,1,0,0,0
+access_member_admin,Member Admin,model_fedex_project_member,fedex_repository.group_administrator,1,1,1,1
+access_member_manager,Member Manager,model_fedex_project_member,fedex_repository.group_repository_manager,1,1,1,1
+access_member_coordinator,Member Coordinator,model_fedex_project_member,fedex_repository.group_coordinator,1,1,1,1
+access_member_faculty,Member Faculty,model_fedex_project_member,fedex_repository.group_faculty,1,1,1,0
+access_member_student,Member Student,model_fedex_project_member,fedex_repository.group_student,1,0,0,0
+access_member_management,Member Management,model_fedex_project_member,fedex_repository.group_management,1,0,0,0
+access_milestone_admin,Milestone Admin,model_fedex_milestone,fedex_repository.group_administrator,1,1,1,1
+access_milestone_manager,Milestone Manager,model_fedex_milestone,fedex_repository.group_repository_manager,1,1,1,1
+access_milestone_coordinator,Milestone Coordinator,model_fedex_milestone,fedex_repository.group_coordinator,1,1,1,1
+access_milestone_faculty,Milestone Faculty,model_fedex_milestone,fedex_repository.group_faculty,1,1,1,0
+access_milestone_student,Milestone Student,model_fedex_milestone,fedex_repository.group_student,1,0,0,0
+access_milestone_management,Milestone Management,model_fedex_milestone,fedex_repository.group_management,1,0,0,0
+access_document_admin,Document Admin,model_fedex_document,fedex_repository.group_administrator,1,1,1,1
+access_document_manager,Document Manager,model_fedex_document,fedex_repository.group_repository_manager,1,1,1,1
+access_document_coordinator,Document Coordinator,model_fedex_document,fedex_repository.group_coordinator,1,1,1,1
+access_document_faculty,Document Faculty,model_fedex_document,fedex_repository.group_faculty,1,1,1,0
+access_document_student,Document Student,model_fedex_document,fedex_repository.group_student,1,0,1,0
+access_document_management,Document Management,model_fedex_document,fedex_repository.group_management,1,0,0,0
+access_requirement_admin,Requirement Admin,model_fedex_document_requirement,fedex_repository.group_administrator,1,1,1,1
+access_requirement_manager,Requirement Manager,model_fedex_document_requirement,fedex_repository.group_repository_manager,1,1,1,1
+access_requirement_coordinator,Requirement Coordinator,model_fedex_document_requirement,fedex_repository.group_coordinator,1,1,1,1
+access_requirement_faculty,Requirement Faculty,model_fedex_document_requirement,fedex_repository.group_faculty,1,0,0,0
+access_requirement_student,Requirement Student,model_fedex_document_requirement,fedex_repository.group_student,1,0,0,0
+access_requirement_management,Requirement Management,model_fedex_document_requirement,fedex_repository.group_management,1,0,0,0
+access_alert_admin,Alert Admin,model_fedex_alert_log,fedex_repository.group_administrator,1,1,1,1
+access_alert_manager,Alert Manager,model_fedex_alert_log,fedex_repository.group_repository_manager,1,0,0,0
+access_alert_coordinator,Alert Coordinator,model_fedex_alert_log,fedex_repository.group_coordinator,0,0,0,0
+access_alert_faculty,Alert Faculty,model_fedex_alert_log,fedex_repository.group_faculty,0,0,0,0
+access_alert_student,Alert Student,model_fedex_alert_log,fedex_repository.group_student,0,0,0,0
+access_alert_management,Alert Management,model_fedex_alert_log,fedex_repository.group_management,0,0,0,0
+access_add_member_admin,Add Member Admin,model_fedex_add_member_wizard,fedex_repository.group_administrator,1,1,1,1
+access_add_member_manager,Add Member Manager,model_fedex_add_member_wizard,fedex_repository.group_repository_manager,1,1,1,1
+access_add_member_coordinator,Add Member Coordinator,model_fedex_add_member_wizard,fedex_repository.group_coordinator,1,1,1,1
+access_add_member_faculty,Add Member Faculty,model_fedex_add_member_wizard,fedex_repository.group_faculty,1,1,1,1
+access_replace_admin,Replace Admin,model_fedex_document_replace_wizard,fedex_repository.group_administrator,1,1,1,1
+access_replace_manager,Replace Manager,model_fedex_document_replace_wizard,fedex_repository.group_repository_manager,1,1,1,1
+access_replace_coordinator,Replace Coordinator,model_fedex_document_replace_wizard,fedex_repository.group_coordinator,1,1,1,1
+access_replace_faculty,Replace Faculty,model_fedex_document_replace_wizard,fedex_repository.group_faculty,1,1,1,1
+access_replace_student,Replace Student,model_fedex_document_replace_wizard,fedex_repository.group_student,1,1,1,1
+access_import_admin,Import Admin,model_fedex_import_wizard,fedex_repository.group_administrator,1,1,1,1
+access_import_manager,Import Manager,model_fedex_import_wizard,fedex_repository.group_repository_manager,1,1,1,1
+access_import_preview_admin,Import Preview Admin,model_fedex_import_preview,fedex_repository.group_administrator,1,1,1,1
+access_import_preview_manager,Import Preview Manager,model_fedex_import_preview,fedex_repository.group_repository_manager,1,1,1,1
